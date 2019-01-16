@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2.1e2" height="2.1e2" version="1.1" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(-75 -56)">
+  <path d="m1.3e2 56c-28 1.1-51 20-51 43v90l27 0.067 26 0.13h27l27-27h-27v-64c0-8.9 12-16 27-16 15 0 27 7.1 27 16v11h80v-11c0-24-24-43-53-43h-1.1e2c-0.92 0-1.8-0.037-2.7 0zm56 1.1e2h27v64c0 8.9-12 16-27 16-15 0-27-7.1-27-16v-11h-80v11c0 24 24 43 53 43h1.1e2c30-1.2e-4 53-19 53-43v-91l-53-0.13h-27z" color="#000000" fill="none" stroke="#000"/>
+ </g>
+</svg>
