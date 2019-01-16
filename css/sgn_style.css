@@ -1,0 +1,81 @@
+/* fonts.googleapis.com/css?family=Cabin */
+@font-face {
+  font-family: 'Cabin';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Cabin Regular'), local('Cabin-Regular'), url(https://fonts.gstatic.com/s/cabin/v8/yQOMOX5hR0-6LTD879t-PQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	color: inherit;
+	border: none;
+}
+
+/* Utilities */
+
+.wispy
+{
+	color: #888;
+	font-size: small;
+	text-transform: uppercase;
+	font-weight: 100;
+	letter-spacing: 2px;
+	word-spacing: 4px;
+}
+
+.solidTop{
+	border-top: 1px solid transparent;
+}
+.solidBottom{
+	border-bottom: 1px solid transparent;
+}
+
+/* Sections */
+.leader{
+	height: 33%;
+}
+.follower{
+	height: 44%;
+}
+
+/* Colours */
+.olive{
+	background-color: #7EA629;
+}
+.beige{
+	background-color: #D9C99A;
+}
+.strawberry{
+	background-color: #D93030;
+}	
+
+/* Typography */
+
+h1, h2, h3, h4, .wispy{
+	font-family: "Cabin", "Gill Sans MT", "Gill Sans", sans-serif;
+	font-weight: 100;
+}
+h3, h4
+{
+	margin: 0.5em 0 0.1em;
+}
+
+/* Footer */
+	
+footer {
+	margin: 5em 0 2em;
+	clear: both;
+	display: block;
+}	
+footer p {
+	border-top: 1px solid #aaa;
+	padding-top: 1em;
+	text-align: center;
+	line-height: 1.5em;
+}
+

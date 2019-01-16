@@ -1,0 +1,31 @@
+
+title: SteGriff
+encoding: UTF-8
+permalink: /post/:title/
+repository: stegriff/stegriff
+
+highlighter: none
+
+# Set default.html as default layout
+defaults:
+  -
+    scope:
+      path: "" # All files in the project
+    values:
+      layout: "default"
+      
+titles_from_headings:
+  enabled:     true
+  strip_title: false
+  collections: true
+  
+# Includes
+plugins:
+  - jekyll-optional-front-matter
+  - jekyll-default-layout
+  - jekyll-feed
+  - jekyll-timeago
+  - jekyll-titles-from-headings
+exclude:
+  - Gemfile
+  - Gemfile.lock

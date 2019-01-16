@@ -1,0 +1,9 @@
+{ "textFormat" : "markdown", "text" : "## ZYROFISHER SCRUM TIME
+
+It's a good time to meet up and plan the day's work! 
+
+ * Ongoing - do we need to work together? 
+ * New - do we need to push Richard? 
+ * Finished - Have we checked, tested, and told Rich?
+ 
+🚲💻📊 " }

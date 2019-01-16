@@ -1,0 +1,22 @@
+{% include boilerplate.html %}
+</head>
+<body>
+
+	{% include header.html %}
+	
+	{% include pager.html %}
+	
+	<article>
+		{% if page.date %}
+		<p class="f5 i">
+			<time pubdate datetime="{{page.date}}">
+				{{page.date | date_to_long_string}}
+			</time>
+		</p>
+		{% endif %}
+		{{content}}
+	</article>
+	
+	{% include footer.html %}
+</body>
+</html>
