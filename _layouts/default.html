@@ -1,4 +1,6 @@
 {% include boilerplate.html %}
+<link rel="stylesheet" href="/css/sgn_style.css">
+<link rel="stylesheet" href="/css/sgn_blog.css">
 </head>
 <body>
 
@@ -6,7 +8,7 @@
 	
 	{% include pager.html %}
 	
-	<article>
+	<article class="">
 		{% if page.date %}
 		<p class="f5 i">
 			<time pubdate datetime="{{page.date}}">

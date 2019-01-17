@@ -1,9 +1,9 @@
-	<header class="beige">
+	<header class="plus">
 		<h1><a href="/">SteGriff</a></h1>
 		<h2><a href="/upblog">Blog</a></h2>
-		<nav class="olive">
-			<ul class="ul-circle">
-				{% for post in site.posts limit: 6 %}
+		<nav class="bg-blue near-white">
+			<ul class="list">
+				{% for post in site.posts limit: 5 %}
 				<li>
 					<a href="{{post.url}}">
 						{{post.title}}

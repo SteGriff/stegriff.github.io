@@ -13,6 +13,8 @@ defaults:
       path: "" # All files in the project
     values:
       layout: "default"
+      bio: false
+      latestposts: false
       
 titles_from_headings:
   enabled:     true
