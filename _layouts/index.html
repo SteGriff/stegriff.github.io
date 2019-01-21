@@ -1,5 +1,81 @@
-{% include boilerplate.html %}
+<!DOCTYPE HTML>
+<html class="light">
+<head>
+<title>SteGriff</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/tachyons.css">
+<style>
+a { color: #357edd; /* .blue */ }
+
+body, .border, .fill, .sg, .plus
+{
+	transition: all 0.3s ease;
+}
+
+.shapes
+{
+background-color: #ffffff;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='%23eeeeee' fill-opacity='0.5'%3E%3Cpath fill-rule='evenodd' d='M11 0l5 20H6l5-20zm42 31a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM0 72h40v4H0v-4zm0-8h31v4H0v-4zm20-16h20v4H20v-4zM0 56h40v4H0v-4zm63-25a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM53 41a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-30 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-28-8a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zM56 5a5 5 0 0 0-10 0h10zm10 0a5 5 0 0 1-10 0h10zm-3 46a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm10 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM21 0l5 20H16l5-20zm43 64v-4h-4v4h-4v4h4v4h4v-4h4v-4h-4zM36 13h4v4h-4v-4zm4 4h4v4h-4v-4zm-4 4h4v4h-4v-4zm8-8h4v4h-4v-4z'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.light .plus
+{
+background-color: #fff;
+background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23dddddd' %3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.dark .plus
+{
+background-color: #111;
+background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23333333' %3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.sg
+{
+	stroke-width: 2;
+}
+.light .sg
+{
+	fill : #fff;
+	stroke: #ddd;
+}
+.dark .sg
+{
+	fill : #111;
+	stroke: #333;
+}
+
+.light body
+{
+	color: #222;
+}
+.dark body
+{
+	color: #eee;
+}
+
+.light .fill
+{
+	background: #fff;
+}
+.dark .fill
+{
+	background: #111;
+}
+
+.light .border
+{
+	border-color: #ddd;
+}
+.dark .border
+{
+	border-color: #333;
+}
+
+</style>
 </head>
+
 <body class="plus">
 	<main class="
 		ma3 ma4-l f4
@@ -11,7 +87,6 @@
 			mh4-ns
 			">
 			<div class="">
-				<a href="/">
 				<svg
 					style="width:240px;height:240px;"
 					class=""
@@ -25,32 +100,24 @@
 					   class="sg" />
 					</g>
 				</svg>
-				</a>
-				
-				<div class="lh-copy measure">
-					<h1 class="" rel="author">
-						{% if page.title %}
-							<a class="link" href="/">SteGriff</a>/<span class="gold">{{page.title}}</span>
-						{% else %}
-							Ste Griffiths
-						{% endif %}
-					</h1>
-					
-					{% if page.bio %}
+
+				<div class="lh-copy">
+					<h1 class="" rel="author">Ste Griffiths</h1>
 					<h2 class="normal">
 						Living the way of <span class="gold">Jesus</span>, 
 						writing <span class="code blue">code</span>,
 						and loving my <span class="red">community</span>.
 					</h2>
-					{% endif %}
-					
-					{{content}}
+
+					<p class="measure lh-copy">
+						Hi, I'm SteGriff! I'm <a href="/wedding">happily married</a> to Helen,
+						I write code for <a href="http://villagesoftware.co.uk">Village Software</a> and <a href="https://github.com/stegriff">for fun</a>, and I'm trying to take after Jesus Christ (but still working on it).
+					</p>
 				</div>
 			</div>
 			
-			{% if page.latestposts %}
 			<div class="cf">
-				<h2>Recent <a href="/upblog">blog posts</a>:</h2>
+				<h2>Recent posts on <a href="/upblog">Upblog</a>:</h2>
 				<div class="flex-ns js-posts">
 					{% for post in site.posts limit: 3 %}
 					<div class="b--blue ba br3 fill 
@@ -59,7 +126,7 @@
 						<h3>
 							<a href="{{post.url}}">{{post.title}}</a>
 						</h3>
-						<p class="f5">{{post.content | strip_html | truncatewords: 50}}</p>
+						<p>{{post.content | strip_html | truncatewords: 50}}</p>
 						<span class="f6">
 							<time datetime="{{post.date}}">{{post.date | date_to_long_string}}</time>
 						</span>
@@ -67,11 +134,6 @@
 					{% endfor %}
 				</div>
 			</div>
-			
-			<div class="cf">
-				{{page.links}}
-			</div>
-			{% endif %}
 		</div>
 		
 	</main>
